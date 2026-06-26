@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  /* A repeating radial-gradient "perforation" used as the torn edge on the
+     order-ticket stub. Drawn as a background strip rather than individual
+     DOM nodes so it scales cleanly at any width. */
+  .perf-edge {
+    background-image: radial-gradient(circle at center, #fbf4e8 5px, transparent 5.5px);
+    background-size: 16px 16px;
+    background-position: -8px center;
+    height: 12px;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-chili focus-visible:ring-offset-2 focus-visible:ring-offset-paper;
+  }
+}
