@@ -1,6 +1,6 @@
 import type { ApiErrorBody } from "../types";
 
-export const API_BASE_URL = import.meta.env.VITE_API_URL ?? "http://localhost:4000";
+export const API_BASE_URL = import.meta.env.VITE_API_URL ?? "https://food-order-management-3kc5.onrender.com";
 
 export class ApiClientError extends Error {
   details?: Array<{ path: string; message: string }>;
