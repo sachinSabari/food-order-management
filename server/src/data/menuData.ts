@@ -33,7 +33,7 @@ export const seedMenuItems: MenuItem[] = [
     name: "Veggie Burger",
     description: "Grilled black bean patty, avocado, pickles, chipotle mayo.",
     price: 9.49,
-    image: "https://images.unsplash.com/photo-1525059696034-4967a729002e?w=600",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600",
     category: "Burgers",
     available: true,
   },
