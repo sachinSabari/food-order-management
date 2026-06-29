@@ -9,7 +9,7 @@ import { errorHandler, notFoundHandler } from "./middleware/errorHandler.js";
 export function createApp(): Express {
   const app = express();
 
-  const allowedOrigin = process.env.CLIENT_ORIGIN ?? "https://food-order-management-bne9.vercel.app/";
+  const allowedOrigin = process.env.CLIENT_ORIGIN ?? "https://food-order-management-bne9.vercel.app";
 
   app.use(helmet());
   app.use(cors({ origin: allowedOrigin }));
